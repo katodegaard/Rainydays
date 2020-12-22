@@ -1,0 +1,177 @@
+@font-face {
+    font-family: Staatliches, Montserrat;
+    src: url('https://fonts.googleapis.com/css2?family=Montserrat&family=Staatliches&display=swap');
+    }
+
+/* NAVIGATION */
+header {
+    width: 100%;
+    position: sticky;
+    font-family: Montserrat, Calibri, Verdana;
+    font-size: 30;
+    font-weight: bold;
+}
+nav {
+    background-color: #6C7B7E;
+    position: relative;
+    text-align: center;
+    top: 30px;
+}
+nav li {
+    display: inline-block;
+    padding: 0px 10px 0px 0px;
+    font-size: 20;
+    font-weight: bold;
+}
+nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 12px 30px 12px 30px;
+}
+
+.menu {
+    background-color: #0A3641;
+}
+
+/* MAIN */
+body {
+    background-color: #6C7B7E;
+    font-family: Montserrat, Calibri, Verdana;
+    font-size: 22;
+}
+main {
+    background: url('/rainydays/images/bg_mobile.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 90px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px; 
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+    min-height: 200px;
+    font-size: 16px;
+    justify-content: stretch;
+  }
+ 
+.thumbnail {
+    max-width: 200px;
+}
+
+.logo {
+    max-width: 140px;
+    padding-left: 40px;
+    padding-top: 20px;
+}
+.content {
+    background-color: #FFFFFF;
+    opacity: 0.8;
+    max-width: 85%;
+    height: auto;
+    margin: 0 auto;
+    font-size: 24px;
+    color: #0a3641;
+    font-family: Staatliches, Montserrat, Calibri, Verdana;
+}
+.navigation {
+    display: grid;
+    grid-gap: 0px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.content a {
+    text-decoration: none;
+    font-size: 24px;
+    color: #0a3641;
+    font-family: Staatliches, Montserrat, Calibri, Verdana;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .item {
+    flex: 1;
+    padding: 10px;
+    margin: 10px;
+  }
+
+ .navmenleft {
+    font-size: 20px;
+    line-height: 50px;
+    color: #505535;
+    font-family: Staatliches, Montserrat, Calibri, Verdana;
+    padding: 0px 20px;
+  }
+
+  .navmenright {
+    font-size: 20px;
+    line-height: 50px;
+    color: #505535;
+    font-family: Staatliches, Montserrat, Calibri, Verdana;
+    padding: 0px 20px;
+  }
+
+  .navmenleft a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #505535;
+    font-family: Staatliches, Montserrat, Calibri, Verdana;
+}
+
+.navmenright a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #505535;
+    font-family: Staatliches, Montserrat, Calibri, Verdana;
+}
+
+/* FOOTER */
+
+footer {
+    position: fixed;
+    text-align: center;
+    background-color: black;
+    opacity: 0.75;
+    width: 100%;
+    height: 50px;
+    bottom: 0px;
+    left: 0px;
+}
+
+footer li {
+    display: inline-block;
+    font-size: 18px;
+    color: #fea700;
+    font-family: Staatliches, Montserrat, Calibri, Verdana;
+    padding: 0px 30px 0px 0px;
+}
+
+@media only screen and (min-width: 600px) {
+    .product-list {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-template-rows: auto auto;
+        grid-gap: 20px;
+        min-height: 200px;
+        font-size: 16px;
+        justify-content: stretch; 
+    }
+    main {
+    background: url('/rainydays/images/bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    }
+    .logo {
+        max-width: 280px;
+        padding-left: 60px;
+        padding-top: 20px;
+    }
+}
