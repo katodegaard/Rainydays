@@ -40,7 +40,7 @@ body {
     font-size: 22;
 }
 main {
-    background: url('rainydays/images/bg_mobile.jpg');
+    background: url('../images/bg_mobile.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     position: fixed;
@@ -165,7 +165,7 @@ footer li {
         justify-content: stretch; 
     }
     main {
-    background: url('rainydays/images/bg.jpg');
+    background: url('../images/bg.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     }
