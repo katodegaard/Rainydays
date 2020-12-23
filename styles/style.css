@@ -86,8 +86,7 @@ main {
 }
 
 .content {
-    background-color: #FFFFFF;
-    opacity: 0.8;
+    background-color: rgba(255, 255, 255, 0.8);
     max-width: 85%;
     height: auto;
     margin: 0 auto;
@@ -100,7 +99,6 @@ main {
     grid-gap: 0px;
     grid-template-columns: 1fr 1fr;
 }
-
 .content a {
     text-decoration: none;
     font-size: 24px;
