@@ -19,10 +19,6 @@ nav {
         padding: 10px;
     }
 
-#index .logo-small {
-    display: none;
-}
-
 nav li {
     display: inline-block;
     position: sticky;
@@ -58,6 +54,11 @@ body {
     font-family: Montserrat, Calibri, Verdana;
     font-size: 22px;
 }
+
+.logo {
+    max-width: 340px;
+}
+
 main {
     background: url('../images/bg_mobile.jpg');
     background-size: cover;
@@ -82,14 +83,6 @@ main {
  
 .thumbnail {
     max-width: 200px;
-}
-
-#header .logo-small {
-    display: none;
-}
-
-.logo {
-    max-width: 340px;
 }
 
 .content {
@@ -208,6 +201,9 @@ footer li {
         top: -20px;
         left: -10px;
     }
+    #main .logo {
+        visibility: hidden;
+    }
     .product-list {
         display: grid;
         grid-template-columns: auto;
@@ -222,11 +218,6 @@ footer li {
     background-size: cover;
     background-repeat: no-repeat;
     }
-    .logo {
-        max-width: 120px;
-        padding-left: 10px;
-        padding-top: 0px;
-    }
 }
 @media only screen and (min-width: 700px) {
     nav li {
@@ -238,7 +229,6 @@ footer li {
         font-family: Montserrat, Calibri, Verdana;
         font-weight: bold;
     }
-    
     nav ul {
         display: grid;
         justify-content: center;
@@ -247,12 +237,15 @@ footer li {
         grid-template-columns: auto auto auto;
         grid-gap: 10px;
     }
-    .logo-small {
-        max-width: 180px;
-        padding-left: 10px;
-        padding-top: 0px;
+    .logo {
+        max-width: 340px;
+        position: absolute;
+        top: 40px;
+        left: 20px;
     }
-
+        #header .logo-small {
+        display: none;
+    }
     .product-list {
         display: grid;
         grid-template-columns: auto auto auto auto;
@@ -266,10 +259,5 @@ footer li {
     background: url('../images/bg.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    }
-    .logo {
-        max-width: 380px;
-        padding-left: 40px;
-        padding-top: 20px;
     }
 }
