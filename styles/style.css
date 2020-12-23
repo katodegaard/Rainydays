@@ -17,6 +17,14 @@ nav {
     text-align: center;
     top: 30px;
 }
+
+.logo-small {
+image: url('images/logo_mobile.png');
+position: fixed;
+top: 90px;
+left: 0px;
+}
+
 nav li {
     display: inline-block;
     padding: 0px 10px 0px 0px;
@@ -57,7 +65,8 @@ main {
     grid-gap: 20px;
     min-height: 200px;
     font-size: 16px;
-    justify-content: stretch;
+    justify-content: space-evenly;
+    margin-left: 20px;
   }
  
 .thumbnail {
@@ -69,6 +78,10 @@ main {
     padding-left: 40px;
     padding-top: 20px;
 }
+#index .logo {
+    display: none;
+}
+
 .content {
     background-color: #FFFFFF;
     opacity: 0.8;
@@ -155,6 +168,27 @@ footer li {
 }
 
 @media only screen and (min-width: 600px) {
+    .product-list {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 20px;
+        min-height: 200px;
+        font-size: 16px;
+        justify-content: stretch; 
+    }
+    main {
+    background: url('images/bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    }
+    .logo {
+        max-width: 220px;
+        padding-left: 40px;
+        padding-top: 20px;
+    }
+}
+
+@media only screen and (min-width: 900px) {
     .product-list {
         display: grid;
         grid-template-columns: auto auto auto auto;
