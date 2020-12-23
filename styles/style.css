@@ -19,10 +19,14 @@ nav {
 }
 
 .logo-small {
-image: url('images/logo_mobile.png');
-position: fixed;
-top: 90px;
-left: 0px;
+        top: -40px;
+        left: 20px;
+        max-width: 180px;
+        position: absolute;
+    }
+
+#index .logo-small {
+    display: none;
 }
 
 nav li {
@@ -73,12 +77,7 @@ main {
     max-width: 200px;
 }
 
-.logo {
-    max-width: 140px;
-    padding-left: 40px;
-    padding-top: 20px;
-}
-#index .logo {
+#header .logo-small {
     display: none;
 }
 
