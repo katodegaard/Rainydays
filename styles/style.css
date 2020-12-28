@@ -184,7 +184,6 @@ footer li {
         text-decoration: none;
         padding: 8px 20px 8px 20px;
     }
-    
     nav ul {
         display: grid;
         justify-content: center;
@@ -199,8 +198,8 @@ footer li {
         top: -20px;
         left: -10px;
     }
-    #main .logo {
-        visibility: hidden;
+    .logo {
+        max-width: 0px;
     }
     .product-list {
         display: grid;
@@ -245,7 +244,7 @@ footer li {
         visibility: hidden;
     }
     #main .logo {
-        max-width: 340px;
+        max-width: 300px;
         position: absolute;
         top: 40px;
         left: 20px;
