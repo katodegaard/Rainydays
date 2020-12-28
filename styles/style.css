@@ -194,7 +194,7 @@ footer li {
         grid-gap: 5px;
     }
     .logo-small {
-        max-width: 120px;
+        max-width: 130px;
         position: absolute;
         top: -20px;
         left: -10px;
@@ -235,14 +235,20 @@ footer li {
         grid-template-columns: auto auto auto;
         grid-gap: 10px;
     }
-    .logo {
+    .logo-small {
+        max-width: 180px;
+        position: absolute;
+        top: -20px;
+        left: -10px;
+    }
+    #header .logo-small {
+        visibility: hidden;
+    }
+    #main .logo {
         max-width: 340px;
         position: absolute;
         top: 40px;
         left: 20px;
-    }
-        #header .logo-small {
-        display: none;
     }
     .product-list {
         display: grid;
